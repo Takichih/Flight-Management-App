@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Delete_Flight</class>
+ <widget class="QDialog" name="Delete_Flight">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>451</width>
+    <height>130</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Delete a Flight</string>
+  </property>
+  <widget class="QPushButton" name="BoutonDelete">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>80</y>
+     <width>90</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>406</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QLabel" name="labelDescription">
+    <property name="text">
+     <string>Enter the flight number to be deleted: </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineNumber"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>BoutonDelete</sender>
+   <signal>clicked()</signal>
+   <receiver>Delete_Flight</receiver>
+   <slot>slotDelete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>204</x>
+     <y>343</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>208</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slotSupprimer()</slot>
+  <slot>slotDelete()</slot>
+ </slots>
+</ui>

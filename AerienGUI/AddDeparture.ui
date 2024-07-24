@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddDeparture</class>
+ <widget class="QDialog" name="AddDeparture">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>391</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Add Departure</string>
+  </property>
+  <widget class="QPushButton" name="ButtonConfirmer">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>330</y>
+     <width>90</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Confirmer</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelNumber">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Flight Number</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditNumber">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>20</y>
+     <width>113</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AC1234</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelCompany">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Company</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditCompany">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>70</y>
+     <width>113</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AIR UL</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelHour">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>130</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hour</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditHour">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>120</y>
+     <width>113</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>18:00</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelCity">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>180</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>City</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditCity">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>170</y>
+     <width>113</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TORONTO</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelBoardingGate">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>230</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Boarding Gate</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelBoardingHour">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>280</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Boarding Time</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditBoardingHour">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>270</y>
+     <width>113</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>17:59</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditBoardingGate">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>220</y>
+     <width>113</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Z99</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ButtonConfirmer</sender>
+   <signal>clicked()</signal>
+   <receiver>AddDeparture</receiver>
+   <slot>slotConfirmeDeparture()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>184</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slotConfirmerDepart()</slot>
+  <slot>slotConfirmeDeparture()</slot>
+ </slots>
+</ui>

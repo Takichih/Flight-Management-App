@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>Airport.h</itemPath>
+      <itemPath>Arrival.h</itemPath>
+      <itemPath>ContratException.h</itemPath>
+      <itemPath>Depart.h</itemPath>
+      <itemPath>Flight.h</itemPath>
+      <itemPath>FlightException.h</itemPath>
+      <itemPath>validationFormat.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Airport.cpp</itemPath>
+      <itemPath>Arrival.cpp</itemPath>
+      <itemPath>ContratException.cpp</itemPath>
+      <itemPath>Depart.cpp</itemPath>
+      <itemPath>Flight.cpp</itemPath>
+      <itemPath>validationFormat.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+      <logicalFolder name="f2"
+                     displayName="AeroportTesteur"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/AeroportTesteur.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3"
+                     displayName="ArriveeTesteur"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/ArriveeTesteur.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4"
+                     displayName="DepartTesteur"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/DepartTesteur.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1"
+                     displayName="VolTesteur"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/VolTesteur.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="Airport.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Airport.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arrival.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arrival.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ContratException.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ContratException.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Depart.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Depart.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Flight.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Flight.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FlightException.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles">
+        <ccTool>
+          <incDir>
+            <pElem>/usr/src/gtest/include</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibLibItem>gtest_main</linkerLibLibItem>
+            <linkerLibLibItem>gtest</linkerLibLibItem>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f2">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f2</output>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f3">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f3</output>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f4">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f4</output>
+        </linkerTool>
+      </folder>
+      <item path="tests/AeroportTesteur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/ArriveeTesteur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/DepartTesteur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/VolTesteur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="validationFormat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="validationFormat.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="Airport.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Airport.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arrival.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arrival.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ContratException.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ContratException.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Depart.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Depart.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Flight.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Flight.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FlightException.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f2">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f2</output>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f3">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f3</output>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f4">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f4</output>
+        </linkerTool>
+      </folder>
+      <item path="tests/AeroportTesteur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/ArriveeTesteur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/DepartTesteur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/VolTesteur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="validationFormat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="validationFormat.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

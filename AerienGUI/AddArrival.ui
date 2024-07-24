@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddArrival</class>
+ <widget class="QDialog" name="AddArrival">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>378</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AddArrival</string>
+  </property>
+  <widget class="QLineEdit" name="lineEditNumber">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>40</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LH0472</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>320</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Confirmer</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Number">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>39</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Flight Number :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Company">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>89</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Company :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditCompany">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>90</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LUFTHANSA</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Hour">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>139</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hour :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditHour">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>140</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>22:05</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Status">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>239</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Status :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditStatus">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>240</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> Retardé </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="City">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>189</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>City :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditCity">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>190</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MUNICH</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AddArrival</receiver>
+   <slot>slotConfirmeArrival()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>180</x>
+     <y>335</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>207</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slotConfirmerArrivee()</slot>
+  <slot>slotConfirmeArrival()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AirportTable</class>
+ <widget class="QMainWindow" name="AirportTable">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TableauAeroport</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEditAir">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>681</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: oblique 10pt &quot;Monospace&quot;;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <widget class="QMenu" name="menuAdd_Flight">
+     <property name="title">
+      <string>Add </string>
+     </property>
+     <addaction name="actionDeparture"/>
+     <addaction name="actionArrival"/>
+    </widget>
+    <addaction name="menuAdd_Flight"/>
+    <addaction name="actionDelete_Flight"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionDelete_Flight">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionDeparture">
+   <property name="text">
+    <string>Departure</string>
+   </property>
+  </action>
+  <action name="actionArrival">
+   <property name="text">
+    <string>Arrival</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionClose</sender>
+   <signal>triggered()</signal>
+   <receiver>AirportTable</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDeparture</sender>
+   <signal>triggered()</signal>
+   <receiver>AirportTable</receiver>
+   <slot>slotDeparture()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionArrival</sender>
+   <signal>triggered()</signal>
+   <receiver>AirportTable</receiver>
+   <slot>slotArrival()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDelete_Flight</sender>
+   <signal>triggered()</signal>
+   <receiver>AirportTable</receiver>
+   <slot>slotDeleteFlight()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slotDepart()</slot>
+  <slot>slotArrivee()</slot>
+  <slot>slotSupprimerVol()</slot>
+  <slot>slotDeleteFlight()</slot>
+  <slot>slotArrival()</slot>
+  <slot>slotDeparture()</slot>
+ </slots>
+</ui>
